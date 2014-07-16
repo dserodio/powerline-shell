@@ -32,6 +32,9 @@ class DefaultColor:
     JOBS_FG = 39
     JOBS_BG = 238
 
+    NEWLINE_FG = ''
+    NEWLINE_BG = ''
+
     CMD_PASSED_BG = 236
     CMD_PASSED_FG = 15
     CMD_FAILED_BG = 161
