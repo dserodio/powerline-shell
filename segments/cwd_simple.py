@@ -24,4 +24,9 @@ def add_cwd_segment():
     #if (path == '/'): path = ''
     powerline.append(' %s ' % path, Color.PATH_FG, Color.PATH_BG)
 
-add_cwd_segment()
+try:
+    add_cwd_segment()
+except Exception as ex:
+    import traceback
+    warn("Error getting cwd")
+    print traceback.format_exc()
